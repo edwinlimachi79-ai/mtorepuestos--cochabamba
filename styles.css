@@ -1,0 +1,217 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f4f4f9; 
+    color: #333;
+    line-height: 1.6;
+}
+
+/* UTILIDADES */
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.seccion-clara {
+    background-color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.seccion-oscura {
+    background-color: #333333; 
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* HEADER Y NAVEGACIÓN */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50; 
+    color: white;
+    padding: 15px 0;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db; 
+}
+
+/* SECCIÓN HERO (INICIO) */
+.hero {
+    background-color: #3498db; 
+    color: white;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* BOTONES */
+.boton-principal {
+    display: inline-block;
+    background-color: #e74c3c; 
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-principal:hover {
+    background-color: #c0392b;
+}
+
+.boton-secundario {
+    display: inline-block;
+    background-color: #2ecc71; /* Verde WhatsApp */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 15px; 
+}
+
+.boton-secundario:hover {
+    background-color: #27ae60;
+}
+
+/* SECCIÓN DE PRODUCTOS (TARJETAS) */
+#productos h3 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.tarjetas-servicio {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: #ecf0f1; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; 
+    min-width: 280px; 
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.tarjeta h4 {
+    color: #3498db;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.tarjeta p {
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #e74c3c; 
+    font-size: 1.1em;
+}
+
+/* CARACTERÍSTICAS (GARANTÍA Y ENVÍO) */
+.caracteristicas-contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+
+.caracteristica {
+    width: 30%;
+    min-width: 280px;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.caracteristica h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* FOOTER (CONTACTO) */
+footer a {
+    color: #2ecc71; 
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES (Para que el diseño se adapte a Móviles) */
+@media (max-width: 768px) {
+    
+    header .contenedor {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+    
+    nav ul li a {
+        margin: 0 10px;
+    }
+
+    .tarjeta, .caracteristica {
+        width: 90%; 
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+}
